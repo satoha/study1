@@ -1,13 +1,18 @@
 <template>
   <div id="app">
+    <Header></Header>
     <img alt="Vue logo" src="./assets/logo.png">
     
   </div>
 </template>
 
 <script>
+import Header from './components/Header'
 export default {
   name: 'App',
+  components: {
+    Header
+  }
 
 }
 </script>
