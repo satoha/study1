@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <Header></Header>
-    <img alt="Vue logo" src="./assets/logo.png">
-    
+    <b-container class="cont">
+    </b-container>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+
 import Header from './components/Header'
+import Footer from './components/Footer'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   }
 
 }
@@ -22,8 +26,13 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.cont{
+  height: 2000px;
+}
+Header{
+  z-index: 100;
 }
 </style>
