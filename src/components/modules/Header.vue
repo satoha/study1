@@ -12,11 +12,11 @@
                                 <div class="px-3 py-2">
                                     <nav class="header-menu--contents">
                                         <ul type="none">
-                                            <li>HOME</li>
-                                            <li>Internet</li>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Javascript</li>
+                                            <router-link to="/"><li>TOP</li></router-link>
+                                            <router-link to="/cat"><li>Internet</li></router-link>
+                                            <router-link to="/cat"><li>HTML</li></router-link>
+                                            <router-link to="/cat"><li>CSS</li></router-link>
+                                            <router-link to="/cat"><li>Javascript</li></router-link>
                                         </ul>
                                     </nav>
                                 </div>
@@ -24,12 +24,14 @@
                         </div>
                     </b-col>
                     <b-col class="header-logo">
-                        <h1>.Pass</h1>
+                        <router-link to="/"><h1>.Pass</h1></router-link>
                     </b-col>
                     <b-col class="header-search">
-                        <button v-b-toggle.sidebar class="header-menu--button">
+                        <router-link to="/cat">
+                        <button class="header-menu--button">
                             <BIconSearch></BIconSearch>
                         </button>
+                        </router-link>
                     </b-col>
                 </b-row>
             </b-container>       
@@ -58,6 +60,7 @@ $base: #B4C498;
     font-size: 36px;
     position: fixed;
     width: 100%;
+    height: 4rem;
     color: white;
     &-menu{
         text-align: left;
@@ -76,6 +79,7 @@ $base: #B4C498;
                 &:hover{
                 background-color: $ac1;
                 }
+                color:white;
                 cursor: pointer;
                 margin-top: 5px;
                 ;
@@ -84,6 +88,7 @@ $base: #B4C498;
     }
     &-logo{
         text-align:center;
+        color: white;
     }
     &-search{
         text-align: right;

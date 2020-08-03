@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <Header></Header>
-    <b-container class="cont">
-    </b-container>
+    <div class="fix"></div>
+    <router-view></router-view>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
 
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/modules/Header'
+import Footer from './components/modules/Footer'
 export default {
   name: 'App',
   components: {
@@ -27,12 +27,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-
-.cont{
-  height: 2000px;
+  background-color: #B4C498;
 }
 Header{
   z-index: 100;
+}
+.fix{
+  height: 6rem;
 }
 </style>

@@ -4,10 +4,10 @@
             <nav class="footer-nav">
                 <b-container fulid>
                     <b-row align-v="center"> 
-                        <b-col sm="12" md="6" lg="3"><div class="footer-nav--content">Internet</div></b-col>
-                        <b-col sm="12" md="6" lg="3"><div class="footer-nav--content">HTML</div></b-col>
-                        <b-col sm="12" md="6" lg="3"><div class="footer-nav--content">CSS</div></b-col>
-                        <b-col sm="12" md="6" lg="3"><div class="footer-nav--content">Javascript</div></b-col>
+                        <b-col sm="12" md="6" lg="3"><router-link to="/cat"><div class="footer-nav--content">Internet</div></router-link></b-col>
+                        <b-col sm="12" md="6" lg="3"><router-link to="/cat"><div class="footer-nav--content">HTML</div></router-link></b-col>
+                        <b-col sm="12" md="6" lg="3"><router-link to="/cat"><div class="footer-nav--content">CSS</div></router-link></b-col>
+                        <b-col sm="12" md="6" lg="3"><router-link to="/cat"><div class="footer-nav--content">Javascript</div></router-link></b-col>
                     </b-row>
                 </b-container>
             </nav>
@@ -44,6 +44,7 @@ $base: #B4C498;
     width: 100%;
     color: white;
     text-align: center;
+    margin-top: 1rem;
     padding: 1rem;
     &-nav{
         &--content{
@@ -53,7 +54,9 @@ $base: #B4C498;
             margin-top:1rem;
             border: solid 1px white;
             padding:1rem;
-            
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
         }
     }
     &-bottom{
