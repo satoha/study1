@@ -89,6 +89,10 @@ $base: #B4C498;
     &-logo{
         text-align:center;
         color: white;
+        a{
+            text-decoration: none;
+            color:white;
+        }
     }
     &-search{
         text-align: right;
